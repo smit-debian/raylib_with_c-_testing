@@ -5,12 +5,12 @@
 class Window
 {
 private:
-	int width;
-	int height;
-	const std::string title;
-	int fps;
+        int width;
+        int height;
+        const std::string title;
+        int fps;
 
 public:
-	Window( int width, int height, const std::string& title, int fps );
-	~Window();
+        Window( int width, int height, const std::string& title, int fps );
+        ~Window();
 };
