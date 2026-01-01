@@ -1,20 +1,18 @@
-#include <raylib.h>
+#include "window.hpp"
+#include "raylib.h"
 
-int main ()
+int main()
 {
-	InitWindow(800, 450, "test");
-	SetTargetFPS(60);
+        Window window(800, 450, "test", 60);
 
-	while ( !WindowShouldClose() )
-	{
-		BeginDrawing();
+        while( !WindowShouldClose() )
+        {
+                BeginDrawing();
 
-		ClearBackground(RAYWHITE);
+                ClearBackground(PURPLE);
 
-		EndDrawing();
-	}
+                EndDrawing();
+        }
 
-	CloseWindow();
-
-	return 0;
+        return 0;
 }
